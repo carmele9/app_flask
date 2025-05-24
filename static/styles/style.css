@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif; /* Establece la fuente de texto para todo el cuerpo del documento */
+    margin: 0; /* Elimina el margen predeterminado */
+    padding: 0; /* Elimina el relleno predeterminado */
+    height: 100vh; /* Establece la altura del cuerpo al 100% de la ventana gráfica */
+}
+
+.content {
+    display: flex; /* Utiliza el modelo de caja flexible para el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    height: 100%; /* Establece la altura del contenido al 100% de la ventana gráfica */
+    background-color: #f0f0f0; /* Establece el color de fondo del contenido */
+    flex-direction: column; /* Organiza los elementos hijos en columnas */
+}
+
+.container {
+    text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.url-input {
+    width: 300px; /* Establece el ancho del campo de entrada de URL */
+    padding: 10px; /* Añade relleno alrededor del campo de entrada */
+    font-size: 16px; /* Establece el tamaño de fuente del campo de entrada */
+    border: 1px solid #ccc; /* Establece un borde de 1px sólido con un color gris claro */
+    border-radius: 5px; /* Aplica esquinas redondeadas al campo de entrada */
+    margin-bottom: 20px; /* Añade margen inferior para separar el campo de entrada del botón */
+}
+
+.submit-btn {
+    background-color: #4CAF50; /* Establece el color de fondo del botón de envío */
+    color: white; /* Establece el color del texto del botón de envío */
+    padding: 10px 20px; /* Añade relleno alrededor del texto del botón de envío */
+    font-size: 16px; /* Establece el tamaño de fuente del texto del botón de envío */
+    border: none; /* Elimina el borde del botón de envío */
+    border-radius: 5px; /* Aplica esquinas redondeadas al botón de envío */
+    cursor: pointer; /* Cambia el cursor a un puntero al pasar sobre el botón */
+    transition: background-color 0.3s; /* Agrega una transición suave al color de fondo del botón */
+}
+
+.submit-btn:hover {
+    background-color: #3e8e41; /* Cambia el color de fondo del botón cuando se pasa sobre él */
+}
+
+.container {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    margin-bottom: 20px; /* Añade margen inferior para separar el formulario del resultado */
+}
+
+#resultContainer {
+    padding: 20px;
+    background-color: #f0eaea;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

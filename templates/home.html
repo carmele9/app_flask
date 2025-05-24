@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+        <title>URL REGISTER</title>
+    </head>
+    <body>
+        <div class="content">
+            <div class="container">
+                <h1>URL Checker</h1>
+                <form id="urlForm" method = "post">
+                    <input type="text" id="urlInput" name="urlInput" placeholder="Enter URL" class="url-input" required>
+                    <br>
+                    <button type="submit" id="checkUrlBtn" class="submit-btn">Check URL</button>
+                </form>
+            </div>
+            <div id="resultContainer" class="container">
+                {% if url %}
+                    <p>Has Entrado La URL: {{url}}</p>
+                {% endif %}
+            </div>
+        </div>
+    </body>
+</html>
